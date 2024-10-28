@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "94331252-fcae-4345-8243-ea0a4589eecf",
+		"name": "API-Alumnos-Propuesto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34150216"
+	},
+	"item": [
+		{
+			"name": "Listar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tenant_id\": \"UTEC\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://4qnaqfvtwb.execute-api.us-east-1.amazonaws.com/dev/alumnos/listar",
+					"protocol": "https",
+					"host": [
+						"4qnaqfvtwb",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"alumnos",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tenant_id\": \"UTEC\",\r\n    \"alumno_id\" : \"202010290\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://4qnaqfvtwb.execute-api.us-east-1.amazonaws.com/dev/alumnos/eliminar",
+					"protocol": "https",
+					"host": [
+						"4qnaqfvtwb",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"alumnos",
+						"eliminar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tenant_id\": \"UTEC\",\r\n  \"alumno_id\": \"2021077991\",\r\n  \"alumno_datos\": {\r\n\t\"nombre\": \"Juana Gomez\",\r\n\t\"sexo\": \"F\",\r\n\t\"fecha_nac\": \"2000-12-01\",\r\n\t\"celular\": \"999736333\",\r\n\t\"domicilio\": {\r\n\t\t\"direcc\": \"Av. Javier Prado 122\",\r\n\t\t\"distrito\": \"San Isidro\",\r\n\t\t\"provincia\": \"Lima\",\r\n\t\t\"departamento\": \"Lima\",\r\n\t\t\"pais\": \"Perú\"\r\n\t} \r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://4qnaqfvtwb.execute-api.us-east-1.amazonaws.com/dev/alumnos/crear",
+					"protocol": "https",
+					"host": [
+						"4qnaqfvtwb",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"alumnos",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tenant_id\": \"UTEC\",\r\n  \"alumno_id\": \"2021077991\",\r\n  \"alumno_datos\": {\r\n\t\"nombre\": \"Geraldo Colchado Ruiz\",\r\n\t\"sexo\": \"M\",\r\n\t\"fecha_nac\": \"2000-09-01\",\r\n\t\"celular\": \"999736332\",\r\n\t\"domicilio\": {\r\n\t\t\"direcc\": \"Av. Javier Prado 158\",\r\n\t\t\"distrito\": \"San Borja\",\r\n\t\t\"provincia\": \"Lima\",\r\n\t\t\"departamento\": \"Lima\",\r\n\t\t\"pais\": \"Perú\"\r\n\t} \r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://4qnaqfvtwb.execute-api.us-east-1.amazonaws.com/dev/alumnos/modificar",
+					"protocol": "https",
+					"host": [
+						"4qnaqfvtwb",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"alumnos",
+						"modificar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"alumno_id\" : \"202010290\",\r\n    \"tenant_id\": \"UTEC\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://4qnaqfvtwb.execute-api.us-east-1.amazonaws.com/dev/alumnos/buscar",
+					"protocol": "https",
+					"host": [
+						"4qnaqfvtwb",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"alumnos",
+						"buscar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
